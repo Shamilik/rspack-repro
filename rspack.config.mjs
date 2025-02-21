@@ -13,7 +13,8 @@ if (!isRunningRspack && !isRunningWebpack) {
  * @type {import('webpack').Configuration | import('@rspack/cli').Configuration}
  */
 const config = {
-  mode: "development",
+  mode: "production",
+  target: 'node22',
   devtool: false,
   entry: {
     main: "./src/index",
